@@ -1,0 +1,41 @@
+.card-container {
+  border: 3px solid rgb(231, 219, 219);
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px solid rgb(146, 146, 146);
+  margin-bottom: 10px;
+  color: #daa520;
+  border-radius: 10px;
+}
+
+.server-info {
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+u {
+  color: rgb(128, 128, 128);
+}
+
+.price-card {
+  border: 3px solid rgb(233, 233, 233);
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.title-price-card {
+  text-align: center;
+  color: rgb(60, 179, 113);
+  margin-bottom: 10px;
+  font-size: 40px;
+}

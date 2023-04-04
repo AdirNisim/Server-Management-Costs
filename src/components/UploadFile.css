@@ -1,0 +1,63 @@
+.container-button {
+  border-radius: 12px;
+  background-color: #1563ff;
+  padding: 16px 30px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+    transform 0.2s;
+  border: 2px solid;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.042px;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  margin-right: 10px;
+}
+
+input[type="file"]::file-selector-button {
+  border-radius: 12px;
+  background-color: #1563ff;
+  padding: 16px 30px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+    transform 0.2s;
+  border: 2px solid;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.042px;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+}
+
+.top-continer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.continer-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.node-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
