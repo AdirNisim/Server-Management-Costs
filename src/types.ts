@@ -47,14 +47,17 @@ export interface Node {
   containers_usage_memory: string;
   is_prom: string;
   query_period: string;
+  price?: number;
 }
 
 export interface priceData {
-  memory: number;
-  cpu: number;
+  memoryInfrastructure: number;
+  cpuInfrastructure: number;
+  memoryApplication: number;
+  cpuApplication: number;
   pricePerMemory: number;
   pricePerCpu: number;
-  // totalPrice: number;
+  competitorCloudPrice?: string;
   // totalPriceforMemory: number;
   // totalPriceforCpu: number;
 }

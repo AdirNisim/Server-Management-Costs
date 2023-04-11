@@ -4,9 +4,6 @@ import Badge from "./badge";
 
 // const Card: React.FC<Node> = ({ ...nodeData }) => {
 const Card: React.FC<Node> = ({ ...nodeData }) => {
-  console.log(nodeData);
-  // console.log(region);
-
   return (
     <div className="card-container">
       <div className="card-top">
@@ -15,26 +12,27 @@ const Card: React.FC<Node> = ({ ...nodeData }) => {
       <Badge text={nodeData.cloud_provider}></Badge>
       <ul className="server-info">
         <li>
-          {" "}
           <u>Node memory:</u> {nodeData.requests_memory}
         </li>
         <li>
-          {" "}
           <u>Node cpu:</u> {nodeData.requests_cpu}
         </li>
         <li>
-          {" "}
           <u>Purche option:</u> {nodeData.purchaseOption}
         </li>
         <li>
-          {" "}
           <u>Allocate cpu:</u> {nodeData.allocatable_cpu}
         </li>
         <li>
-          {" "}
           <u>Allocate memory:</u> {nodeData.allocatable_memory}
         </li>
       </ul>
+
+      {nodeData.price && (
+        <div className="cloud-price">
+          estimated price: ${nodeData.price}/month
+        </div>
+      )}
     </div>
   );
 };
